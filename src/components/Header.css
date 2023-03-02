@@ -1,0 +1,19 @@
+.intro {
+    padding: 10px;
+    margin: 30px;
+    color: wheat;
+    text-align: justify;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+@media only screen and (max-device-width: 767px) {
+    .intro {
+        font-size: 14px;
+        font-weight: bolder;
+    }
+}
+
+.footer-header {
+    margin-top: 40px;
+}

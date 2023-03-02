@@ -66,6 +66,7 @@ const Navbar = () => {
       <Avatar className={classes.avatar} src={avatar} alt="Mahmudul Alam" />
       <Divider />
       <List>
+        {" "}
         {menuItems.map((item, i) => (
           <ListItem
             button
@@ -76,12 +77,13 @@ const Navbar = () => {
             to={item.listPath}
           >
             <ListItemIcon className={classes.listItem}>
-              {item.listIcon}
-            </ListItemIcon>
-            <ListItemText primary={item.listText} />
+              {" "}
+              {item.listIcon}{" "}
+            </ListItemIcon>{" "}
+            <ListItemText primary={item.listText} />{" "}
           </ListItem>
-        ))}
-      </List>
+        ))}{" "}
+      </List>{" "}
     </Box>
   );
 
@@ -91,10 +93,10 @@ const Navbar = () => {
         <AppBar position="static" className={classes.appbar}>
           <Toolbar>
             <IconButton onClick={() => setOpen(true)}>
-              <ArrowBack className={classes.arrow} />
-            </IconButton>
+              <ArrowBack className={classes.arrow} />{" "}
+            </IconButton>{" "}
             <Typography variant="h5" className={classes.title}>
-              Portfolio
+              Cagdas `s Portfolio
             </Typography>
           </Toolbar>
         </AppBar>
