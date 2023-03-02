@@ -15,6 +15,7 @@ import Typography from "@material-ui/core/Typography";
 import ArrowBack from "@material-ui/icons/ArrowBack";
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import Home from "@material-ui/icons/Home";
+import Info from "@material-ui/icons/Info";
 import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
@@ -51,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
 
 const menuItems = [
   { listIcon: <Home />, listText: "Home", listPath: "/" },
+  { listIcon: <Info />, listText: "About", listPath: "/about" },
   { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
   { listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
   { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },

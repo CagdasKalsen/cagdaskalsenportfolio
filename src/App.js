@@ -6,7 +6,7 @@ import Resume from "./components/Resume";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
-
+import About from "./components/About";
 import "./App.css";
 
 function App() {
@@ -15,11 +15,12 @@ function App() {
       <CssBaseline />
       <Navbar />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/resume" component={Resume} />
-        <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/contact" component={Contact} />
-      </Switch>
+        <Route exact path="/" component={Home} />{" "}
+        <Route exact path="/resume" component={Resume} />{" "}
+        <Route exact path="/portfolio" component={Portfolio} />{" "}
+        <Route exact path="/contact" component={Contact} />{" "}
+        <Route exact path="/about" component={About} />{" "}
+      </Switch>{" "}
     </React.Fragment>
   );
 }
