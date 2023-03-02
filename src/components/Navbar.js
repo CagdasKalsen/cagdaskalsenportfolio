@@ -12,7 +12,8 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Avatar from "@material-ui/core/Avatar";
 import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";
-import ArrowBack from "@material-ui/icons/ArrowBack";
+// import ArrowBack from "@material-ui/icons/ArrowBack";
+// import ListIcon from "@mui/icons-material/List";
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import Home from "@material-ui/icons/Home";
 import Info from "@material-ui/icons/Info";
@@ -20,7 +21,7 @@ import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../avatar.png";
-
+import MenuIcon from "@material-ui/icons/Menu";
 import Footer from "../components/Footer";
 
 const useStyles = makeStyles((theme) => ({
@@ -28,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#222",
     margin: 0,
   },
-  arrow: {
+  menu: {
     color: "tomato",
   },
   title: {
@@ -65,7 +66,7 @@ const Navbar = () => {
 
   const sideList = () => (
     <Box className={classes.menuSliderContainer} component="div">
-      <Avatar className={classes.avatar} src={avatar} alt="Mahmudul Alam" />
+      <Avatar className={classes.avatar} src={avatar} alt="Cagdas Kalsen" />
       <Divider />
       <List>
         {" "}
@@ -95,7 +96,7 @@ const Navbar = () => {
         <AppBar position="static" className={classes.appbar}>
           <Toolbar>
             <IconButton onClick={() => setOpen(true)}>
-              <ArrowBack className={classes.arrow} />{" "}
+              <MenuIcon className={classes.menu} />{" "}
             </IconButton>{" "}
             <Typography variant="h5" className={classes.title}>
               Cagdas `s Portfolio
