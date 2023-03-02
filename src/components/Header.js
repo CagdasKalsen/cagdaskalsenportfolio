@@ -12,14 +12,23 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     width: theme.spacing(15),
     height: theme.spacing(15),
-    margin: theme.spacing(1),
+    margin: theme.spacing(12),
+    [theme.breakpoints.down("sm")]: {
+      margin: theme.spacing(8),
+    },
   },
   title: {
     color: "tomato",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1.1rem",
+    },
   },
   subtitle: {
     color: "tan",
     textTransform: "uppercase",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1.1rem",
+    },
   },
   typedContainer: {
     position: "absolute",
@@ -79,7 +88,9 @@ const Header = () => {
         project to life, I'd love to chat. Let's work together to create
         something amazing!
       </p>
-      <Footer className="footer-header" />
+      <br />
+      <br /> <br />
+      <Footer />
     </Box>
   );
 };
