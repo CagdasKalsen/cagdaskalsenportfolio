@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-
+import "./Resume.css";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#233",
@@ -114,42 +114,47 @@ const Resume = () => {
   return (
     <Box component="header" className={classes.mainContainer}>
       <Typography variant="h4" align="center" className={classes.heading}>
-        Working Experience
-      </Typography>
+        Working Experience{" "}
+      </Typography>{" "}
       <Box component="div" className={classes.timeLine}>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2013
-        </Typography>
+          2023/2022
+        </Typography>{" "}
         <Box component="div" className={classes.timeLineItem}>
           <Typography
             variant="h5"
             align="center"
             className={classes.subHeading}
           >
-            web design
-          </Typography>
+            Software Engineer Fellow{" "}
+          </Typography>{" "}
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
-          </Typography>
+            General Assembly{" "}
+          </Typography>{" "}
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            <ul>
+              <li>
+                Full-stack software engineering immersive student in an
+                intensive, twelve-week, 450+ hour program focused on product
+                development fundamentals, object-oriented programming, MVC
+                frameworks, data modeling, and team collaboration strategies.
+              </li>
+              <li>Developed a portfolio of individual and group projects</li>
+            </ul>
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2014
+          2022/2013
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -157,27 +162,42 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            html & css
+            Independent Contractor
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            Uber
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            <ul>
+              <li>
+                Earned and maintained a 5.0 rating as a driver after providing
+                8,500+ rides to customers in the Boston Metro.
+              </li>
+              <li>
+                Communicated effectively with riders via the Uber app to
+                coordinate pick-up and drop-off locations
+              </li>
+              <li>
+                Provided excellent customer service to ensure apositive rider
+                experience, resulting in maintained 5.0 rating
+              </li>
+              <li>
+                Responded promptly to customer request and complaints, ensuring
+                that customers would be satisfied and be repeat customers with
+                Uber
+              </li>
+            </ul>
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2015
+          2020/2019
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -185,27 +205,38 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Fullstack Javascript
+            Letter Carrier
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            Usps
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            {" "}
+            <ul>
+              <li>
+                Led a regular mail route, ensuring accurate and prompt delivery
+                of packages, letters, and other mail items
+              </li>
+              <li>
+                Prepared mail from the distribution case and organized it in
+                sequence for efficient delivery
+              </li>
+              <li>
+                Handled undeliverable mail in accordance with established
+                procedures
+              </li>
+            </ul>
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2017
+          2014/2013
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -213,20 +244,31 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Django & React
+            Real Estate Agent
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            Proper Real Estate
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            <ul>
+              <li>
+                Showed properties to prospective tenants and provided
+                information about amenities, rent, prices, and lease terms
+              </li>
+              <li>
+                Negotiated lease terms and conditions with prospective tenants,
+                including rent, move-in dates, and lease length
+              </li>
+              <li>
+                Prepared lease agreements in a detail-oriented manner to ensure
+                that all agreements are in compliance with state and federal
+                laws
+              </li>
+            </ul>
           </Typography>
         </Box>
       </Box>

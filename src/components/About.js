@@ -39,7 +39,7 @@ const Contact = () => {
           I'm a full stack software developer with a passion for creating
           innovative and impactful solutions. My expertise lies in building
           projects with <strong> Django, React, </strong> and{" "}
-          <strong> JavaScript.</strong>I'm constantly striving to expand my
+          <strong> JavaScript.</strong> I'm constantly striving to expand my
           knowledge and skillset. <br />
           <br />
           In addition to my technical background,I hold a bachelor's degree in{" "}

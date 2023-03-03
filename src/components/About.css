@@ -5,7 +5,7 @@
     word-spacing: -1px;
 }
 
-@media only screen and (max-device-width: 350px) {
+@media only screen and (max-device-width: 550px) {
     .intro {
         margin: 8px;
         font-size: 16px;

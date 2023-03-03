@@ -99,7 +99,7 @@ const Navbar = () => {
               <MenuIcon className={classes.menu} />{" "}
             </IconButton>{" "}
             <Typography variant="h5" className={classes.title}>
-              Cagdas `s Portfolio
+              Cagdas`s Portfolio
             </Typography>
           </Toolbar>
         </AppBar>
