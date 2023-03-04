@@ -12,8 +12,6 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Avatar from "@material-ui/core/Avatar";
 import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";
-// import ArrowBack from "@material-ui/icons/ArrowBack";
-// import ListIcon from "@mui/icons-material/List";
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import Home from "@material-ui/icons/Home";
 import Info from "@material-ui/icons/Info";
@@ -69,7 +67,6 @@ const Navbar = () => {
       <Avatar className={classes.avatar} src={avatar} alt="Cagdas Kalsen" />
       <Divider />
       <List>
-        {" "}
         {menuItems.map((item, i) => (
           <ListItem
             button
@@ -80,13 +77,12 @@ const Navbar = () => {
             to={item.listPath}
           >
             <ListItemIcon className={classes.listItem}>
-              {" "}
-              {item.listIcon}{" "}
-            </ListItemIcon>{" "}
-            <ListItemText primary={item.listText} />{" "}
+              {item.listIcon}
+            </ListItemIcon>
+            <ListItemText primary={item.listText} />
           </ListItem>
-        ))}{" "}
-      </List>{" "}
+        ))}
+      </List>
     </Box>
   );
 
@@ -96,8 +92,8 @@ const Navbar = () => {
         <AppBar position="static" className={classes.appbar}>
           <Toolbar>
             <IconButton onClick={() => setOpen(true)}>
-              <MenuIcon className={classes.menu} />{" "}
-            </IconButton>{" "}
+              <MenuIcon className={classes.menu} />
+            </IconButton>
             <Typography variant="h5" className={classes.title}>
               Cagdas`s Portfolio
             </Typography>

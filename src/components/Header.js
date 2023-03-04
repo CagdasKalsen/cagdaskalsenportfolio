@@ -7,7 +7,7 @@ import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../avatar.png";
 import "./Header.css";
-// import Footer from "./Footer";
+import Skills from "./Skills";
 const useStyles = makeStyles((theme) => ({
   avatar: {
     width: theme.spacing(15),
@@ -55,7 +55,7 @@ const Header = () => {
           loop
         />
       </Typography>
-      {/* <Footer /> */}
+      <Skills />
     </Box>
   );
 };
